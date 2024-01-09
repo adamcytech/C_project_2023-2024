@@ -1,2 +1,4 @@
-# C_project_2023-2024
-C project automate cy tech 2023-2034
+# C project automate CY-TECH 2023-2034
+
+author : Adam Ilias Abdoulkarim Kiane Hatim
+teacher : Dajouida ZAOUCHE
