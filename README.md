@@ -24,4 +24,6 @@ Quelle est la premiere transition? (de la forme x y z, ou x est l'etat de depart
 
 Quelle est la ieme transition?
 
+-automate_fonctions.c: il contient toutes les fonctions sur les automates que l'on a fait
+
 -
