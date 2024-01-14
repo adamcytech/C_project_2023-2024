@@ -37,6 +37,4 @@ int verifierTrans(Automate *automate, int etat, int symbole);
 
 Automate *fonctionProduit(Automate *automate1, Automate *automate2);
 
-Automate *fonctionConcatenation(Automate *automate1, Automate *automate2);
-
 #endif
