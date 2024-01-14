@@ -4,34 +4,34 @@ author : Adam Ilias Abdoulkarim Kiane Hatim
 
 teacher : Dajouida ZAOUCHE
 
-Ce projet est composé de 7 fichiers:
+This project consists of 7 files:
 
--automate.txt: un exemple d'automate utillisé pour la partie 'importer un aef à partir d'un fichier', nos automates et ce fichier sont structurés comme suit:
+-#automate.txt: an example of the automaton used for the 'import an FSA (Finite State Automaton) from a file' part. Our automata and this file are structured as follows:
+    
+    number of states?
+    
+    number of symbols?
+    
+    what is the initial state? (the initial state is always 0)
+    
+    how many final states are there?
+    
+    What are the final states?(of the form a b c ..., where a,b,c are final states)
+    
+    How many transitions are there?
+    
+    What's the first transition (of the form x y z, where x is the initial state, y the transition and z the final state)?
+    
+    What's the ith transition?
 
-nombre d'etats?
+-automate_functions.c: contains all the functions on the automata we've made
 
-nombre de symboles?
+-automate_struct.h: contains the structure we've used on our functions, as well as the names of these functions
 
-quel est l'etat initial?
+-main.c: contains the functions to be executed with make
 
-combien d'etats finaux y-a-t-il?
+-makefile: a script for automating the running of this project.
 
-Quelles sont ces etats finaux?
+-mot_functions.c: contains functions used on aef words
 
-Combien y-a-t-il de transitions?
-
-Quelle est la premiere transition? (de la forme x y z, ou x est l'etat de depart, y la transition et z l'etat final)
-
-Quelle est la ieme transition?
-
--automate_fonctions.c: il contient toutes les fonctions sur les automates que l'on a fait
-
--automate_struct.h: il contient la structure que l'on a utiliser sur nos fonctions ainsi que le nom de ces fonctions
-
--main.c: contient les fonctions qui vont etre executees avec le make
-
--makefile:
-
--mot_fonctions.c: contient les fonctions utilisé sur les mots d'un aef
-
--mot_struct.h: contient la structure des mots de notre aef qui est une liste chainée
+-mot_struct.h: contains our FSA's word structure, which is a chained list
