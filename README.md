@@ -26,4 +26,4 @@ Quelle est la ieme transition?
 
 -automate_fonctions.c: il contient toutes les fonctions sur les automates que l'on a fait
 
--
+-automate_struct.h: il contient la structure que l'on a utiliser sur nos fonctions 
