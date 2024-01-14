@@ -4,7 +4,7 @@ author : Adam Ilias Abdoulkarim Kiane Hatim
 
 teacher : Dajouida ZAOUCHE
 
-Ce projet est composé de 11 fichiers:
+Ce projet est composé de 7 fichiers:
 
 -automate.txt: un exemple d'automate utillisé pour la partie 'importer un aef à partir d'un fichier', nos automates et ce fichier sont structurés comme suit:
 
@@ -26,4 +26,12 @@ Quelle est la ieme transition?
 
 -automate_fonctions.c: il contient toutes les fonctions sur les automates que l'on a fait
 
--automate_struct.h: il contient la structure que l'on a utiliser sur nos fonctions 
+-automate_struct.h: il contient la structure que l'on a utiliser sur nos fonctions ainsi que le nom de ces fonctions
+
+-main.c: contient les fonctions qui vont etre executees avec le make
+
+-makefile:
+
+-mot_fonctions.c: contient les fonctions utilisé sur les mots d'un aef
+
+-mot_struct.h: contient la structure des mots de notre aef qui est une liste chainée
