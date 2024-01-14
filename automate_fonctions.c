@@ -399,7 +399,7 @@ int estComplet(Automate*automate){
                 }
             }
         if (compteur<1){
-            // printf("L'automate n'est pas complet. \n");
+            printf("L'automate n'est pas complet. \n");
             return -1;
         }
         else{
@@ -409,7 +409,7 @@ int estComplet(Automate*automate){
         }
     }
 
-    // printf("L'automate est complet. \n");
+    printf("L'automate est complet. \n");
     return 0;
 }
 
@@ -423,7 +423,7 @@ int estDeterministe(Automate*automate){
                 }
             }
         if (compteur>=2){
-            // printf("L'automate n'est pas deterministe. \n");
+            printf("L'automate n'est pas deterministe. \n");
             return -1;
         }
         else{
@@ -433,7 +433,7 @@ int estDeterministe(Automate*automate){
         }
     }
 
-    // printf("L'automate est deterministe. \n");
+    printf("L'automate est deterministe. \n");
     return 0;
 }
 
@@ -628,35 +628,3 @@ Automate *fonctionProduit(Automate *automate1, Automate *automate2){
 
 }
 
-Automate *fonctionConcatenation(Automate *automate1, Automate *automate2){
-
-    if (estDeterministe(automate1) == -1 || estDeterministe(automate2) == -1){
-        printf("Un des deux automates n'est pas déterministe.");
-        return NULL;    
-    }
-
-    // INITIALISATION STRUCT DE CONCATENATION : attention il faut corriger la structure !!!
-    Automate *concatenation = (Automate *)malloc(sizeof(Automate)); 
-    concatenation->nb_symboles = automate1->nb_symboles + automate2->nb_symboles + 1 ; 
-    concatenation->nb_etats = automate1->nb_etats + automate2->nb_etats ;
-    concatenation->nb_transitions = automate1->nb_transitions + automate2->nb_transitions + 1;
-    concatenation->etatInitial = automate1->etatInitial;
-    concatenation->nb_etats_finaux = automate2->nb_etats_finaux ;
-    concatenation->etatsFinaux = (int *)malloc(concatenation->nb_etats_finaux * sizeof(int));
-    for (int i = 0; i < automate2->nb_etats_finaux; i++) {concatenation->etatsFinaux[i] = automate2->etatsFinaux[i];} 
-
-    // ALLOCATION DE LA MATRICE + REMPLISSAGE AVEC -1
-    concatenation->automate = (int ***)malloc(concatenation->nb_etats * sizeof(int **));
-    for(int i = 0; i < concatenation->nb_etats; i++) {
-        concatenation->automate[i] = (int **)malloc(concatenation->nb_symboles * sizeof(int *));
-        for(int j = 0; j < concatenation->nb_symboles; j++) {
-            concatenation->automate[i][j] = (int *)malloc(concatenation->nb_etats * sizeof(int));
-            for(int k =0; k < concatenation->nb_etats;k++){
-                concatenation->automate[i][j][k]= -1;
-            }
-        }
-    }
-
-    afficherAutomate(concatenation);
-
-}
