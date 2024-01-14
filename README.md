@@ -8,19 +8,19 @@ This project consists of 7 files:
 
 -automate.txt: an example of the automaton used for the 'import an FSA (Finite State Automaton) from a file' part. Our automata and this file are structured as follows:
     
-    number of states?
+    number of states? (the states are represented by numbers)
     
-    number of symbols?
+    number of symbols? (the symbols are represented by numbers)
     
     what is the initial state? (the initial state is always 0)
     
     how many final states are there?
     
-    What are the final states?(of the form a b c ..., where a,b,c are final states)
+    What are the final states? (of the form a b c ..., where a,b,c are final states)
     
     How many transitions are there?
     
-    What's the first transition (of the form x y z, where x is the initial state, y the transition and z the final state)?
+    What's the first transition? (of the form x y z, where x is the initial state, y the transition and z the final state)?
     
     What's the ith transition?
 
