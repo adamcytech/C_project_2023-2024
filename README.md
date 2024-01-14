@@ -6,7 +6,7 @@ teacher : Dajouida ZAOUCHE
 
 This project consists of 7 files:
 
--#automate.txt: an example of the automaton used for the 'import an FSA (Finite State Automaton) from a file' part. Our automata and this file are structured as follows:
+-automate.txt: an example of the automaton used for the 'import an FSA (Finite State Automaton) from a file' part. Our automata and this file are structured as follows:
     
     number of states?
     
